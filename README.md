@@ -2,6 +2,12 @@
 
 Just a simple library for parsing KATZIBUILD files
 
+## Including in your project
+
+```
+dotnet add package KatzibuildParser
+```
+
 ## Usage
 
 ```
