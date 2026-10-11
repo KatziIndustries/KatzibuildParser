@@ -5,7 +5,20 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
+    <AotCompatible>true</AotCompatible>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <PackageId>KatzibuildParser</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>AaronoLW</Authors>
+    <Description>Simple library for parsing KATZIBUILD files</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
 </Project>
