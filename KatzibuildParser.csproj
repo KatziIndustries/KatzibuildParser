@@ -10,10 +10,9 @@
     <RepositoryUrl>https://github.com/KatziIndustries/KatzibuildParser</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>KatzibuildParser</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>AaronoLW</Authors>
     <Description>Simple library for parsing KATZIBUILD files</Description>
   </PropertyGroup>
