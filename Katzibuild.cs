@@ -9,4 +9,5 @@ public struct Katzibuild
     public List<string>? BuildInstructions;
     public List<string>? InstallInstructions;
     public List<string>? UninstallInstructions;
+    public string Raw;
 }

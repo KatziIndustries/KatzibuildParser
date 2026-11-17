@@ -17,7 +17,8 @@ public static class KatzibuildParser
         {
             BuildInstructions = null,
             InstallInstructions = null,
-            UninstallInstructions = null
+            UninstallInstructions = null,
+            Raw = katzibuildString
         };
 
         string? currentInstructionSet = null;
@@ -131,13 +132,13 @@ public static class KatzibuildParser
 
             case "dependencies":
                 if (!value.StartsWith('[') || !value.EndsWith(']'))
-                    throw new Exception($"KATZIBUILD Url didn't start and end with block parentheses []");
+                    throw new Exception($"KATZIBUILD dependencies didn't start and end with block parentheses []");
 
                 katzibuild.Dependencies = ParseDependencies(value);
                 break;
 
             default:
-                throw new Exception($"key '{key} is not a valid KATZIBUILD key'");
+                throw new Exception($"key '{key}' is not a valid KATZIBUILD key");
         }
 
         return katzibuild;
